@@ -21,6 +21,8 @@ namespace Vidly.App_Start
 
             Mapper.CreateMap<MovieDto, Movie>()
                 .ForMember(c => c.Id, opt => opt.Ignore());
+                
+                //Do you finish the RentalDto <-> Rental ? How to do the List<int> MovieIds to Rental Movie mapping?
         }
     }
 }
